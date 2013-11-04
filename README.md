@@ -1,11 +1,10 @@
-# Local LEMP Setup on CentOS 6.4 with Vagrant / Puppet
+# Local LAMP Setup on CentOS 6.4 with Vagrant / Puppet
 
 This installs a basic Dev server with the following;
 
-* NGINX
+* Apache
 * MySQL
 * PHP
-* PHP-FPM
 * phpMyAdmin
 
 ## Installation 
@@ -14,7 +13,7 @@ Assuming you already have [VirtualBox](https://www.virtualbox.org), [Vagrant](ht
 ```bash
 mkdir -p ~/path/to/where/this/will/live/
 cd ~/path/to/where/this/will/live/
-git clone https://github.com/russmckendrick/vagrant-puppet.git .
+git clone https://github.com/russmckendrick/vagrant-puppet-apache.git .
 ```
 Before you bring up the box, there are a few varibles you can set in vagrant.pp;
 
@@ -36,7 +35,7 @@ The files in you checked out will be in `~/path/to/where/this/will/live/webroot/
 
 ## MySQL / phpMyAdmin Password
 
-You can access phpMyAdmin at [http://localhost:8081](http://localhost:8081), when you are promted for a username use `root` and the password set by the  `$mysql_root_password` varible.
+You can access phpMyAdmin at [http://localhost:8080/phpmyadmin/](http://localhost:8080/phpmyadmin/), when you are promted for a username use `root` and the password set by the  `$mysql_root_password` varible.
 
 ## Vagrant Stuff
 
