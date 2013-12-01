@@ -1,6 +1,6 @@
 # Define the default Varibles
 
-$server_name = "dev.local"
+$vhost_name = "dev.local"
 $webroot = "/webroot"
 
 $mysql_root_password = "wibble"
@@ -13,5 +13,5 @@ $git_repo = "https://github.com/russmckendrick/vagrant-placeholder.git"
 # Run the installaton
 
 include ::common
-include ::yum-update
 include ::services
+include ::yum-update

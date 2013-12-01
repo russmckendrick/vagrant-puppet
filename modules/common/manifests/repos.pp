@@ -8,14 +8,4 @@ package { 'epel-release-6-8.noarch':
 	provider => rpm,
     }
 
-# Add NGINX
-
-	file { "/etc/yum.repos.d/nginx.repo":
-	owner   => "root",
-	group   => "root",
-	mode    => 600,
-	ensure  => file,
-	source  => "puppet:///modules/common/nginx.repo",
-	}
-
 }
