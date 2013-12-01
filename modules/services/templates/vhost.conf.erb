@@ -2,13 +2,13 @@
 # DO NOT EDIT
 
 <VirtualHost *:80>
-  ServerName <%= vhost_name %>
-  ServerAlias *.<%= vhost_name %>
-  ServerAdmin webmaster@<%= vhost_name %>
+  ServerName <%= @vhost_name %>
+  ServerAlias *.<%= @vhost_name %>
+  ServerAdmin webmaster@<%= @vhost_name %>
   ErrorLog /var/log/httpd/error_log
   CustomLog /var/log/httpd/access_log combined
-  DocumentRoot /<%= webroot %>/public_html
-  <Directory "<%= webroot %>/public_html">
+  DocumentRoot /<%= @webroot %>/public_html
+  <Directory "<%= @webroot %>/public_html">
     Order allow,deny
     Allow from all
   </Directory>
