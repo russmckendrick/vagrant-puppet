@@ -1,4 +1,4 @@
-# Local LAMP Setup on CentOS 6.4 with Vagrant / Puppet
+# Local LAMP Setup on CentOS 6.5 with Vagrant / Puppet
 
 This installs a basic Dev server with the following;
 
