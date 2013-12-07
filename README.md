@@ -13,7 +13,7 @@ Assuming you already have [VirtualBox](https://www.virtualbox.org), [Vagrant](ht
 ```bash
 mkdir -p ~/path/to/where/this/will/live/
 cd ~/path/to/where/this/will/live/
-git clone https://github.com/russmckendrick/vagrant-puppet-apache.git .
+git clone https://github.com/russmckendrick/vagrant-puppet.git .
 ```
 Before you bring up the box, there are a few varibles you can set in vagrant.pp;
 
