@@ -16,4 +16,8 @@ class common::apps {
     ensure => installed,
   }
 
+  service { "iptables":
+    ensure => "stopped",
+  }
+
 }
