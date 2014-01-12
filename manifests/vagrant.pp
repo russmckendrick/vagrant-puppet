@@ -14,4 +14,4 @@ $git_repo = "https://github.com/russmckendrick/vagrant-placeholder.git"
 
 include ::common
 include ::services
-include ::yum-update
+# include ::yum-update

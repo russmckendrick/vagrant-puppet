@@ -23,7 +23,7 @@ Before you bring up the box, there are a few varibles you can set in vagrant.pp;
 * **$db_user** = Create a user for *$db_name*, defaults to *vagrant*
 * **$db_pass** = Sets the passsword for *$db_user*, defaults to *vagrant*
 
-Once you have set the varibles you can start the box with;
+Once you have set the variables you can start the box with;
 
 ```bash
 vagrant up
@@ -31,11 +31,11 @@ vagrant up
 
 ## Usage
 
-The files in you checked out will be in `~/path/to/where/this/will/live/webroot/public_html/` point your browser at [http://localhost:8080](http://localhost:8080) to see code in action.
+The files in you checked out will be in `~/path/to/where/this/will/live/webroot/public_html/` point your browser at [http://localhost:8888](http://localhost:8888) to see code in action.
 
 ## MySQL / phpMyAdmin Password
 
-You can access phpMyAdmin at [http://localhost:8080/phpmyadmin/](http://localhost:8080/phpmyadmin/), when you are promted for a username use `root` and the password set by the  `$mysql_root_password` varible.
+You can access phpMyAdmin at [http://localhost:8888/phpmyadmin/](http://localhost:8888/phpmyadmin/), when you are promted for a username use `root` and the password set by the  `$mysql_root_password` varible.
 
 ## Vagrant Stuff
 

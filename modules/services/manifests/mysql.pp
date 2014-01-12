@@ -1,4 +1,4 @@
-class services::mysql {
+class services::mysqldatabase {
 
     mysql::db { "$db_name":
 	user     => "$db_user",

@@ -9,5 +9,6 @@ class services {
 	include '::mysql::server'
  	include '::services::php'
 	include '::services::git'
+	include '::services::mysqldatabase'
 
 }
