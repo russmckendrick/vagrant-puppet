@@ -42,3 +42,26 @@ You can access phpMyAdmin at [http://localhost:8888/phpmyadmin/](http://localhos
 * To login into the VM `vagrant ssh`
 * Halt the VM `vagrant halt` when a VM has been halted you can start it backup with `vagrant up`
 * Finally to get rid of the VM `vagrant destroy`, this will not touch the files in `/webroot`
+
+## Behind a proxy?
+
+This all assumes that you are straight out onto the internet, if you are beind a proxy server then you will need to do these last few steps, the first being install the proxy plugin;
+
+```bash
+vagrant plugin install vagrant-proxyconf
+```
+once the plugin has been installed edit `Vagrantfile` adding;
+
+```
+Vagrant.configure("2") do |config|
+if Vagrant.has_plugin?("vagrant-proxyconf")
+config.env_proxy.http = "http://[IP]:[PORT]"
+config.env_proxy.https = "http://[IP]:[PORT]"
+config.proxy.http = "http://[IP]:[PORT]"
+config.proxy.https = "http://[IP]:[PORT]"
+config.proxy.no_proxy = "localhost,127.0.0.1"
+end
+end
+```
+
+to the end.
